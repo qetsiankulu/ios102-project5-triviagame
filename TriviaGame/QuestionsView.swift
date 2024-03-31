@@ -19,8 +19,6 @@ struct QuestionsView: View {
     let totalQuestions: Int
     @State private var score: Int
   
-    
-    
     // Initialize the view with questions and timer duration passed from TrviaOptionsView
     init(questions: [TriviaQuestion], timerDuration: TimerCount) {
         self.questions = questions
@@ -82,3 +80,9 @@ struct QuestionsView: View {
         TriviaQuestion(type: "multiple", difficulty: "medium", category: "General Knowledge", question: "What is the capital of Germany?", correct_answer: "Berlin", incorrect_answers: ["London", "Paris", "Rome"])
     ], timerDuration: .sixty)
 }
+
+
+
+// check mark image for the right answer
+//Image(systemName: "checkmark.circle.fill")
+//             .foregroundColor(.green)

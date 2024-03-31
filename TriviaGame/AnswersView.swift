@@ -11,13 +11,17 @@ struct AnswersView: View {
     
     let answers: [String]
     let correctAnswer: String
-    @State private var selectedAnswer: String?
     
+    @State private var selectedAnswer: String?
+
     var body: some View {
         VStack {
             ForEach(0..<answers.count, id: \.self) { index in
                 AnswerLabel(answerText: "\(letter(for: index)). \(answers[index])")
+                
+                // if the answer
             }
+                
         }
     }
     
@@ -31,3 +35,7 @@ struct AnswersView: View {
 #Preview {
     AnswersView(answers: ["Eagle", "Birdie", "Bogey", "Albatross"], correctAnswer: "Birdie" )
 }
+
+
+
+

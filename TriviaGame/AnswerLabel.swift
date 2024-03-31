@@ -9,25 +9,22 @@ import SwiftUI
 
 struct AnswerLabel: View {
     let answerText : String
+    
     @State private var isSelected = false
   
     var body: some View {
         
         HStack {                            // <-- contains the text and the check
             Text(answerText)
+                .foregroundColor(isSelected ? .white : .black)
         
             Spacer()
-            
-            if isSelected {                                   // <--- if the label has been clicked, show the checkmark
-                Image(systemName: "checkmark.circle.fill")
-                .foregroundColor(.green)
-            }
-         
+
         }
         .padding()
         .font(.system(size: 20))
         .frame(width: 290)
-        .background(Color.gray.opacity(0.15))
+        .background(isSelected ? Color.blue : Color.gray.opacity(0.15))
         .cornerRadius(10)
         .onTapGesture {
             isSelected.toggle()
@@ -35,8 +32,64 @@ struct AnswerLabel: View {
     }
 }
 
-#Preview {
-    AnswerLabel(answerText: "Eagle")
-}
 
 
+/* WORKING BUILD 
+ struct AnswerLabel: View {
+     let answerText : String
+     
+     @State private var isSelected = false
+   
+     var body: some View {
+         
+         HStack {                            // <-- contains the text and the check
+             Text(answerText)
+                 .foregroundColor(isSelected ? .white : .black)
+         
+             Spacer()
+
+         }
+         .padding()
+         .font(.system(size: 20))
+         .frame(width: 290)
+         .background(isSelected ? Color.blue : Color.gray.opacity(0.15))
+         .cornerRadius(10)
+         .onTapGesture {
+             isSelected.toggle()
+         }
+     }
+ }
+
+ #Preview {
+     AnswerLabel(answerText: "Eagle")
+ }
+ 
+ 
+ 
+ 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//            if isSelected {                                   // <--- if the label has been clicked, show the checkmark
+//                Image(systemName: "checkmark.circle.fill")
+//                .foregroundColor(.green)
+//            }

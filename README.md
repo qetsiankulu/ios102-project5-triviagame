@@ -26,12 +26,11 @@ The following **optional** features are implemented:
 - [x] Implement a timer that puts pressure on the user! Choose any time that works and auto submit choices after the timer expires. 
 
 ## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
-
-[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
+<div>
+    <a href="https://www.loom.com/share/b6a2d7d3a49141dca6771dc1542be7ec">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/b6a2d7d3a49141dca6771dc1542be7ec-with-play.gif">
+    </a>
+  </div>
 
 ## Notes
 
